@@ -10,7 +10,7 @@ import java.io.IOException;
 public class JavaFXToDoListApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("todolist-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(JavaFXToDoListApplication.class.getResource("todolist-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
         stage.setTitle("To Do App");
         stage.setScene(scene);
